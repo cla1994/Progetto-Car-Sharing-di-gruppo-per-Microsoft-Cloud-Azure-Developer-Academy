@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Academy2023.Net.props" />
+</Project>

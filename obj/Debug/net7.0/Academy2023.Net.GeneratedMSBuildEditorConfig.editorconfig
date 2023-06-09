@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Academy2023.Net
+build_property.RootNamespace = Academy2023.Net
+build_property.ProjectDir = C:\Users\user\Desktop\Nuova cartella (5)\Academy2023.NET\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Nuova cartella (5)\Academy2023.NET
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Cars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Maps/_maps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcTWFwc1xfbWFwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Maps/_ridePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcTWFwc1xfcmlkZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Rides/Path.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmlkZXNcUGF0aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/CreateCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXENyZWF0ZUNhcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/DeleteCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXERlbGV0ZUNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/EditCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXEVkaXRDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/UserDatas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhdGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Nuova cartella (5)/Academy2023.NET/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-io06c5czk9
