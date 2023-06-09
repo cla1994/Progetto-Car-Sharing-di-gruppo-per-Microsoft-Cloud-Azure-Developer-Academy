@@ -1,0 +1,69 @@
+﻿@model Academy2023.Net.Models.UserData
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h2>@Model.FirstName @Model.LastName</h2>
+    <hr />
+
+    <div class="row">
+
+        <div class="col-sm-3" style="margin:0;">
+            <div class="card" style="width:400px; border:none; float:left; display:block;">
+            @if (Model.Picture != null)
+            {
+                <img class="card-img-top" src="@Url.Action("GetPicture","UserDatas",new {Id=Model.Picture.PictureID})" style="max-width:250px;max-height:250px;" />
+            }
+        </div>
+        </div>
+        <div class="col-sm-3" style="margin:0">
+            <div class="card" style="border:none; float:left; display:block;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">@Html.DisplayNameFor(model => model.Gender): @Html.DisplayFor(model => model.Gender.GenderName)</li>
+                    <li class="list-group-item">@Html.DisplayNameFor(model => model.BirthDate): @Html.DisplayFor(model => model.BirthDate)</li>
+                    <li class="list-group-item">@Html.DisplayNameFor(model => model.CF): @Html.DisplayFor(model => model.CF)</li>
+                    <li class="list-group-item">@Html.DisplayNameFor(model => model.License): @Html.DisplayFor(model => model.License)</li>
+                    <li class="list-group-item">@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</li>
+                    <li class="list-group-item"><a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model?.UserDataID">Edit</a></li>
+                </ul>
+        </div>
+        </div>
+    </div>
+
+    <p><h3>My Cars <a style="font-size:40px; text-decoration:none" asp-action="CreateCars" asp-route-id="@Model.UserDataID">+</a></h3></p>
+    <hr />
+
+    <div class="row">
+        @foreach (var item in Model.UserCar)
+        {
+            <div class="col-sm-3 p-3">
+                <div class="card" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Number Plate: </h5>
+                        <h3 class="card-title">@item.RegNum</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Model: @item.CarCategory.CarName</li>
+                        <li class="list-group-item">Fuel: @item.FuelType.FuelName</li>
+                        <li class="list-group-item">Seats: @item.MaxSeat</li>
+                        <li class="list-group-item">Luggage Van: @item.TrunkAvailable.ToString()</li>
+                        <li class="list-group-item"><a class="btn btn-primary" style="" asp-action="EditCar" asp-route-id="@item.CarID">Edit</a>
+                            <a class="btn btn-primary" style="" asp-action="DeleteCar" asp-route-id="@item.CarID">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        }
+        <div class="col-sm-3 p-5">
+            <h1>
+                <a style="background-color:#007fff;  font-size: 1.8rem;  font-weight: bold;  color:black;
+                          text-decoration: none;  padding: 1em 2em; " asp-action="CreateCars" asp-route-id="@Model.UserDataID">+</a>
+            </h1>
+        </div>
+    </div>
+</div>
+<div>
+</div>

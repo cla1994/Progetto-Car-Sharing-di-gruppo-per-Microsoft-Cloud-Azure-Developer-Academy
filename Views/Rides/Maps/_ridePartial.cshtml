@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Academy2023.Net.Models.Ride
+@{
+}
+
+
+
+<div class="card" >
+    <div class="cardcard-header">
+        <br />
+    </div>
+    <div class="card-body">
+        <div class="card-title">Ride</div>
+        <div class="card-text"><i class="fa-solid fa-location-dot"></i> <b>Departure:</b> @Model.Departure</div>
+        <div class="card-text"><i class="fa-solid fa-location-dot"></i> <b>Arrival:</b> @Model.Arrival</div>
+        <div class="card-text"><i class="fa-regular fa-calendar"></i> <b>Departure Time:</b> @Model.DepartureTime</div>
+        <div class="card-text"><i class="fa-regular fa-calendar"></i> <b>Arrival Time:</b> @Model.ArrivalTime</div>
+        <div class="card-text"><i class="fa-sharp fa-solid fa-clock"></i> <b>Duration:</b> @Model.GetTimeSpan</div>
+        <div class="card-text"><i class="fa-sharp fa-solid fa-road"></i> <b>Km:</b> @Model.Km</div>
+        <div class="card-text"><i class="fa-solid fa-car"></i> <b>Available seat:</b> @Model.AvailableSeat</div>
+        <br />
+        <a asp-action="Edit" asp-route-id="@Model.RideId"><i class="fa-sharp fa-solid fa-pen"></i></a> |
+        <a asp-action="Details" asp-route-id="@Model.RideId"><i class="fa-sharp fa-solid fa-circle-info"></i></a> |
+        <a asp-action="Delete" asp-route-id="@Model.RideId"><i class="fa-sharp fa-solid fa-trash-can" style="color: #ce1c1c;"></i></a>
+    </div>
+    <div class="card-footer">
+        <br />
+    </div>
+</div>
+
+        

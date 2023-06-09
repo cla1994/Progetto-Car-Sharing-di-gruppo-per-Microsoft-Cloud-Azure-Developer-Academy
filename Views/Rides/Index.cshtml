@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Academy2023.Net.Models.Ride>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Available Path</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<!--
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Departure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Arrival)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArrivalTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Km)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableSeat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arrival)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArrivalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Km)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvailableSeat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Car.CarID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RideId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RideId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RideId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+-->
+@foreach(var ride in Model)
+{
+    @await Html.PartialAsync("Maps/_ridePartial.cshtml",ride)
+}
+

@@ -1,0 +1,100 @@
+﻿@model Academy2023.Net.Models.UserData
+
+@{
+    ViewData["Title"] = "Edit";
+    /*
+    string msg = string.Empty;
+    @if (ViewData.ContainsKey("message"))
+    {
+        msg = ViewData["message"].ToString();
+    }
+    */
+}
+
+<h1>Edit</h1>
+
+<h4>UserData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserDataID" />
+            @if (Model.Picture != null)
+            {
+                <div width="200px">
+                    <img class="card-img-top" src="@Url.Action("GetPicture","UserDatas",new {Id=Model.Picture.PictureID})" style="max-width:250px;max-height:250px" />
+                </div>
+                /*
+                @if (!string.IsNullOrEmpty(msg)){
+                <div>
+                <p style="color:red">@msg</p>
+                </div>
+                }
+                */
+                <a asp-action="DeletePicture" asp-route-PictureId="@Model.Picture.PictureID" asp-route-UserId="@Model.UserDataID">Delete picture</a>
+            }
+            <div class="form-group">
+                <label class="control-label">Edit picture </label>
+                <input type="file" name="addPicture" />
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GenderID" class="control-label"></label>
+                <select asp-for="GenderID" class="form-control" asp-items="ViewBag.GenderID"></select>
+                <span asp-validation-for="GenderID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CF" class="control-label"></label>
+                <input asp-for="CF" class="form-control" />
+                <span asp-validation-for="CF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License" class="control-label"></label>
+                <input asp-for="License" class="form-control" />
+                <span asp-validation-for="License" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthID" class="control-label" hidden></label>
+                <input asp-for="AuthID" class="form-control"  hidden />
+                <span asp-validation-for="AuthID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <!--
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HasCar" /> @Html.DisplayNameFor(model => model.HasCar)
+                </label>
+            </div>-->
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Details" asp-route-id="@Model.UserDataID">Details</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

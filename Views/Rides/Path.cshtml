@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form method="post" asp-action="Path">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <i class="fa-solid fa-location-dot"></i>
+            <label>Departure</label> <br />
+            <input type="text" class="form-control form-text" name="departure" placeholder="Enter place of Departure" />
+        </div>
+
+        <div class="col-sm-6">
+            <i class="fa-solid fa-location-dot"></i>
+            <label>Arrival</label><br />
+            <input type="text" class="form-control form-text" name="Arrival" placeholder="Enter place of Arrival" /><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <i class="fa-regular fa-calendar"></i>
+            <label>Date departure</label> <br />
+            <input type="datetime-local" name="DateDeparture" style="padding-inline:15px" />
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <i class="fa-solid fa-car"></i>
+            <label>Seats</label><br />
+            <input type="number" name="Seats" style="padding-inline:14px" />
+
+        </div>
+    </div>
+    <br />
+    <input type="submit" value="Search" />
+
+</form>
+
+@await Html.PartialAsync("Maps/_maps.cshtml")

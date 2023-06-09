@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img src="./img/LogoAcademyAlpha.png" />
+        <h2 style="color:#404040">Share your ride!</h2>
+        <h3 class="col-lg-8 mx-auto fs-5 text-white">
+            A ride-sharing app is an application that allows people to share their car journeys with other travelers who are going in the same direction.
+            It is a way of saving money, reducing traffic and emissions, and meeting new people.
+        </h3>
+        <div class="d-inline-flex gap-2 mb-5">
+            <a asp-action="Create" asp-controller="UserDatas" class="btn btn-primary btn-lg">Join Now</a>
+        </div>
+    </div>
+</div>
+<script>
+   document.body.style.backgroundImage="url(/img/HomePage.jpg)";
+   document.body.style.backgroundSize="cover";
+</script>

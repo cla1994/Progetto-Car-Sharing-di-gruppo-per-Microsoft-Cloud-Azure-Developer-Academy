@@ -1,0 +1,96 @@
+﻿@model Academy2023.Net.Models.Ride
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <div class="row">
+        <div class="col-sm">
+            <h3>Ride</h3>
+        </div>
+        <div class="col-sm">
+            <h3>Maps</h3>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm">
+    <dl class="row">
+         <dt class="col-sm-4">
+          <i class="fa-solid fa-location-dot"></i>
+          @Html.DisplayNameFor(model => model.Departure)                
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Departure)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-solid fa-location-dot"></i>
+            @Html.DisplayNameFor(model => model.Arrival)
+        </dt>
+        <dd class = "col-sm-8">
+            
+            @Html.DisplayFor(model => model.Arrival)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-regular fa-calendar"></i>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.DepartureTime)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-regular fa-calendar"></i>
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-sharp fa-solid fa-clock"></i>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-sharp fa-solid fa-road"></i>
+            @Html.DisplayNameFor(model => model.Km)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Km)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-solid fa-car"></i>
+            @Html.DisplayNameFor(model => model.AvailableSeat)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.AvailableSeat)
+        </dd>
+        <dt class = "col-sm-4">
+            <i class="fa-solid fa-car"></i>
+            @Html.DisplayNameFor(model => model.Car)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Car.CarID)
+        </dd>
+    </dl>
+    </div>
+        <div class="col-sm">
+            @await Html.PartialAsync("Maps/_maps.cshtml")
+        </div>
+    </div>
+</div>
+<!--
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.RideId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+-->
+<div>
+    <a asp-action="Index"><i class="fa-sharp fa-solid fa-share fa-rotate-180"></i></a> |
+<a asp-action="Edit" asp-route-id="@Model.RideId"><i class="fa-sharp fa-solid fa-pen"></i></a> 
+    
+</div>
