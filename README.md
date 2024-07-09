@@ -8,5 +8,7 @@ Il mio gruppo di 4 persone si è occupato di impostare la connessione con le web
 
 L'app è stata creata creata come app + database sul sito di Azure, e i nostri gruppi hanno lavorato insieme tramite branch / Git e seguendo la metodologia di lavoro Scrum.
 
+Abbiamo usato i linguaggi C#, T-SQL, HTML e CSS.
+
 Riporto il codice del progetto.
 
